@@ -8,35 +8,14 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Hello Rectangle',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Hello Rectangle'),
+          title: const Text("Hello Rectangle"),
         ),
-        body: const HelloRectangle(),
+        body: Container(
+          color: Colors.greenAccent,
+        ),
       ),
     ),
   );
-}
-
-class HelloRectangle extends StatelessWidget {
-  const HelloRectangle({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: Colors.greenAccent,
-        height: 400.0,
-        width: 300.0,
-        child: const Center(
-          child: Text(
-            'Hello!',
-            style: TextStyle(fontSize: 40.0),
-            textAlign: TextAlign.center,
-          ),
-        ),
-      ),
-    );
-  }
 }
