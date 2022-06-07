@@ -42,11 +42,18 @@ class Category extends StatelessWidget {
               ),
             ),
             Center(
-              child: Text("Heart",
+              child: Text(
+                "Heart",
+                style: TextStyle(
+                  fontSize: 24.0,
+                ),
               ),
             ),
           ],
         ),
+        onTap: () {
+          print('I was tapped!');
+        },
       ),
     );
   }
