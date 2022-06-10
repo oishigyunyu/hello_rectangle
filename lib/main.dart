@@ -17,7 +17,8 @@ void main() {
 
 /// This widget is the root of our application.
 ///
-/// The first screen we see is a list [Categories].
+/// The first screen we see is a list [Categories], each of which
+/// has a list of [Unit]s.
 class UnitConverterApp extends StatelessWidget {
   const UnitConverterApp({Key? key}) : super(key: key);
 
